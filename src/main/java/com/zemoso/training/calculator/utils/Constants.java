@@ -7,6 +7,7 @@ public class Constants {
         public static final String CALCULATE = "calculate/";
         public static final String ADD = "add/";
         public static final String FACTORIAL = "factorial/";
+        public static final String MULTIPLY = "multiply/";
     }
 
 }
