@@ -29,7 +29,14 @@ public class CalculatorServiceTest {
 
     @Test
     public void testFactorial(){
+        Integer expectedResult = 24;
+        assertEquals("Testing factorial", expectedResult, mCalculatorService.getFactorial(4).getResult());
 
+        Integer expectedResult = 120;
+        assertEquals("Testing factorial", expectedResult, mCalculatorService.getFactorial(5).getResult());
+
+        Integer expectedResult = 720;
+        assertEquals("Testing factorial", expectedResult, mCalculatorService.getFactorial(6).getResult());
     }
 
 
