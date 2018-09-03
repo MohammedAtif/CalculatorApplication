@@ -32,6 +32,10 @@ public class CalculatorServiceTest {
         Integer expectedResult = 24;
         assertEquals("Testing factorial", expectedResult, mCalculatorService.getFactorial(4).getResult());
 
+        expectedResult = 24;
+        assertNotEquals("Testing not equal result", expectedResult, mCalculatorService.getFactorial(2).getResult());
+
+
         Integer expectedResult = 120;
         assertEquals("Testing factorial", expectedResult, mCalculatorService.getFactorial(5).getResult());
 
