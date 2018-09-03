@@ -29,6 +29,8 @@ public class CalculatorServiceTest {
 
     @Test
     public void testFactorial(){
+        Integer expectedResult = 24;
+        assertEquals("Testing factorial", expectedResult, mCalculatorService.getFactorial(4).getResult());
 
     }
 
