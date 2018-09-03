@@ -31,8 +31,6 @@ public class CalculatorServiceImpl implements CalculatorService {
 
         result.setInput(inputs);
 
-
-
         int fact=1, i=1;
 
         if(input==0){
