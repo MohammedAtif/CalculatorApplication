@@ -24,18 +24,21 @@ public class CalculatorServiceImpl implements CalculatorService {
 
     @Override
     public CalculationIntResult getFactorial(int input) {
-        Integer ans = 1;
-        CalculationIntResult result = new CalculationIntResult();
-        if(input <= 0) {
-            result.setResult(ans);
-        }
-        else{
-            for(int i=1; i < input + 1; i++){
-                ans *=  i;
-            }
-            result.setResult(ans);
-        }
+        int solution = 1;
+        if(input == 0){
+            solution = 1;
 
+        }else if(input > 0){
+           int count = input;
+           while (count > 0){
+               solution = solution*count;
+               count--;
+           }
+        }else{
+            return null;
+        }
+        CalculationIntResult result = new CalculationIntResult();
+        result.setResult(solution);
         return result;
     }
 }
